@@ -1,0 +1,215 @@
+body {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.animated-art {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.circle, .square, .triangle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.circle {
+    border-radius: 50%;
+    animation-name: moveCircle;
+}
+
+.square {
+    animation-name: moveSquare;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #e74c3c;
+    animation-name: moveTriangle;
+}
+
+@keyframes moveCircle {
+    0% { top: 0; left: 0; }
+    50% { top: 150px; left: 150px; }
+    100% { top: 0; left: 0; }
+}
+
+@keyframes moveSquare {
+    0% { top: 0; right: 0; }
+    50% { top: 150px; right: 150px; }
+    100% { top: 0; right: 0; }
+}
+
+@keyframes moveTriangle {
+    0% { top: 0; left: 0; }
+    50% { top: 150px; left: 150px; }
+    100% { top: 0; left: 0; }
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+}
+
+.animated-art {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.circle, .square, .triangle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.circle {
+    animation-name: moveCircle;
+    background-color: #e74c3c;
+}
+
+.square {
+    animation-name: moveSquare;
+    background-color: #2ecc71;
+}
+
+.triangle {
+    width:1;
+    height: 1;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #f39c12;
+    animation-name: moveTriangle;
+}
+
+@keyframes moveCircle {
+    0%, 100% { top: 0; left: 0; }
+    50% { top: 150px; left: 150px; }
+}
+
+@keyframes moveSquare {
+    0%, 100% { top: 0; right: 0; }
+    50% { top: 150px; right: 150px; }
+}
+
+@keyframes moveTriangle {
+    0%, 100% { top: 0; left: 0; }
+    50% { top: 150px; left: 150px; }
+}
+.tech-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.tech-item {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.tech-item:hover {
+    transform: translateY(-10px);
+}
+
+.tech-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.tech-item h3 {
+    color: #333;
+}
+
+.tech-item p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #2980b9;
+}
+.next-page-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.next-page-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.next-page-button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 10px;
+    background-color: #3498db;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 24px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+}
+.home-icon {
+    position: fixed;
+    top: 20px;    
+    right: 20px;    
+}

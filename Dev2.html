@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <!DOCTYPE html>
+    <html>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Cdev2.css">
+       
+    </head>
+    
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Cdev2.css">
+    <style>
+        .top-image {
+            position: relative;
+            text-align: center;
+            margin-bottom: 20px; 
+        }
+        
+        .top-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .image-overlay {
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: white; 
+            padding: 10px 20px;
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="top-image">
+        <img src="https://images.unsplash.com/photo-1588590560438-5e27fe3f6b71?q=80&w=1728&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Top Image">
+        <div class="image-overlay">
+            <h2>Learn new Tech</h2>
+            <p>Enjoy Tech with me</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
+  
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Cdev2.css">
+    <a href="dev1.html" class="home-button">Home</a>
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #111;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        .openbtn:hover {
+            background-color: #000000;
+        }
+
+        row {
+            color: rgb(60, 59, 59);
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 16px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidebar {
+                padding-top: 15px;
+            }
+
+            .sidebar a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="w2">
+        <p>Tech Blog</p>
+    </div>
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Settings</button>
+
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidebar").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidebar").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tech News Page 2</title>
+        <link rel="stylesheet" href="Cdev2.css">
+    </head>
+
+    <body>
+
+        <!DOCTYPE html>
+        <html>
+
+        <head>
+            <style>
+                * {
+                    box-sizing: border-box;
+                }
+
+                .column {
+                    float: left;
+                    width: 33.33%;
+                    padding: 5px;
+                }
+
+                /* Clearfix (clear floats) */
+                .row::after {
+                    content: "";
+                    clear: both;
+                    display: table;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="row">
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D"
+                        alt="Laptops" class="image-content">
+                    <p class="image-description">Tech is everywhere. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Voluptatem, voluptas sint reprehenderit nesciunt quis impedit? Consequuntur ea debitis
+                        voluptatum, voluptates ratione repellat accusantium mollitia exercitationem, atque sed dolor?
+                        Voluptate.</p>
+                </div>
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1662758392656-0e5d4b0f53fb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE5fHx8ZW58MHx8fHx8"
+                        alt="Tech" class="image-content">
+                    <p class="image-description">Life without tech is unimaginable. Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit. Totam, modi aliquid rerum neque, nostrum itaque rem voluptas
+                        beatae placeat dolor eligendi reprehenderit veritatis dolorum quae officia fuga, eaque ut
+                        corrupti expedita tenetur quaerat soluta vitae.</p>
+                </div>
+                <div class="column">
+                    <img src="https://images.unsplash.com/photo-1620794511798-d7ba5299a087?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dGVjaCUyMG1vYmlsZXN8ZW58MHx8MHx8fDA%3D"
+                        alt="Phones" class="image-content">
+                    <p class="image-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+                        laborum, maiores ab, unde dolorem praesentium dolores fugit ea, sint voluptates debitis? Dolorem
+                        eaque dolores et architecto illum. Cum in fuga nam fugit, debitis suscipit facm nostrum beatae
+                        nulla, facilis libero minus odio quas expedita consequatur, delectus ullam fugiat praesentium?
+                        Facere nam doloremque totam repudiandae illo hic sunt, labore consequuntur atque odit iure nemo
+                        cum reiciendis quae explicabo, dolorem in nesciunt nostrum eaque numquam ab error. Unde commodi
+                        amet consequatur aspernatur esse fugit iste.</p>
+                </div>
+            </div>
+
+
+            <div class="content">
+                <div class="article">
+                    <img src="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHRlY2h8ZW58MHx8MHx8fDA%3D"
+                        alt="New Tech News Image" class="article-image">
+                    <h2>Augmented Reality: Bridging Real and Virtual</h2>
+                    <p>
+                        Augmented reality (AR) is gaining momentum, with its applications spanning from gaming to
+                        healthcare.
+                    </p>
+                    <button class="read-more-button">Read More</button>
+                </div>
+
+                <div class="article">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8"
+                        alt="Tech News Image" class="article-image">
+                    <h2>5G Revolution: The Future of Connectivity</h2>
+                    <p>
+                        With faster speeds and reduced latency, 5G is set to redefine how we interact with technology.
+                    </p>
+                    <button class="read-more-button">Read More</button>
+                </div>
+            </div>
+
+
+
+            <script src="script.js"></script>
+            <div class="pagination">
+                <a href="dev3.html" class="next-page">Next Page →</a>
+            </div>
+
+            <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #555
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about">About</a>
+  <a href="#" id="blog">Blog</a>
+  <a href="#" id="projects">Projects</a>
+  <a href="#" id="contact">Contact</a>
+</div>
+
+<div style="margin-left:80px;">
+  <h2>Hoverable Sidenav Buttons</h2>
+  <p>Hover over the buttons in the left side navigation to open them.</p>
+</div>
+   
+</body>
+</html> 
+
+        </body>
+
+        </html>
